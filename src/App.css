@@ -1,0 +1,79 @@
+/* Global styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header styles */
+.header {
+  background-color: #1db954; /* Spotify green */
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Container styles */
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  overflow-y: auto;
+  padding-bottom: 200px;
+}
+
+/* Audio player styles */
+.audio-player {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 500px; /* Adjust width as needed */
+  background-color: #282828; /* Dark card background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1000; /* Ensures it is above other content */
+}
+
+.audio-player h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.audio-player .controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.audio-player button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #1db954; /* Spotify green */
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+  margin: 0 10px; /* Space between buttons */
+}
+
+.audio-player button:hover {
+  background-color: #1ed760; /* Slightly lighter green */
+}
+
